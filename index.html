@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <audio id="background-music" loop>
-        <source src="Khushi come back.mp3.mp3" type="audio/mpeg">
+    <audio id="background-music" loop preload="auto">
+        <source src="Khushi come back.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     
@@ -17,6 +17,7 @@
             <h1>Khushi, I'm So Sorry</h1>
             <p class="subtitle">Our fight has been weighing on me. Let's heal with our memories and promises.</p>
             <div id="countdown">Time since our fight: <span id="timer"></span></div>
+            <button id="play-music-btn" onclick="playMusic()">Play Our Song</button>
         </header>
         
         <section class="apology-note">
