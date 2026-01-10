@@ -1,7 +1,8 @@
 // Initialize on page load
+const startDate = new Date('2026-01-07'); // Replace with actual fight start date (YYYY-MM-DD)
+
 window.onload = function() {
     // Start countdown timer (assuming fight started 4 days ago; adjust startDate)
-const startDate = new Date('2026-01-07'); // Replace with actual fight start date (YYYY-MM-DD)
     updateTimer();
     setInterval(updateTimer, 1000);
     // Initialize slideshow
