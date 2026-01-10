@@ -1,3 +1,6 @@
+// Global variable for countdown timer
+let startDate = new Date('2025-01-10'); // Fight start date (YYYY-MM-DD)
+
 // Auto-play the background music on page load
 window.onload = function() {
     const music = document.getElementById('background-music');
@@ -5,7 +8,6 @@ window.onload = function() {
     music.play().catch(e => console.log('Autoplay blocked, user interaction needed'));
     
     // Start countdown timer (assuming fight started 4 days ago; adjust startDate)
-    const startDate = new Date('2023-10-01'); // Replace with actual fight start date (YYYY-MM-DD)
     updateTimer();
     setInterval(updateTimer, 1000);
     
