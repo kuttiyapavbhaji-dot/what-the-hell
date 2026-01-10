@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, Khushi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="Khushi come back.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="container">
+        <header>
+            <h1>Khushi, I'm So Sorry</h1>
+            <p class="subtitle">Our fight has been weighing on me. Let's heal with our memories and promises.</p>
+            <div id="countdown">Time since our fight: <span id="timer"></span></div>
+        </header>
+        
+        <section class="apology-note">
+            <h2>My Heartfelt Apology</h2>
+            <div class="note-part">
+                <p>Khushi, these 4 days without you have felt like an eternity. I replay our fight in my mind and realize how much I hurt you. I'm truly sorry for [specific reason, e.g., raising my voice/not listening]. You deserve better, and I want to be that for you.</p>
+            </div>
+            <div class="note-part">
+                <p>Remember how we always said we'd face everything together? I miss that. I love your kindness, your laugh, and the way you make every moment special. Please give me a chance to make this right.</p>
+            </div>
+            <div class="note-part">
+                <p>With all my heart,<br>Your [Your Name]</p>
+                <button onclick="revealMessage()">Click for a Secret Message</button>
+                <p id="hidden-message" style="display: none;">[Add a personal inside joke or extra apology, e.g., 'I promise no more burnt toast for breakfast!']</p>
+            </div>
+        </section>
+        
+        <section class="timeline">
+            <h2>Our Story: Key Memories</h2>
+            <div class="timeline-item">
+                <div class="date">First Date - [Date, e.g., June 15, 2022]</div>
+                <p>That magical evening at the park where we talked for hours. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Sunset Walk - [Date]</div>
+                <p>Watching the sky turn orange, holding hands. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Cooking Adventure - [Date]</div>
+                <p>Making a mess in the kitchen, but laughing through it. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Birthday Surprise - [Date]</div>
+                <p>Your face when you saw the cake—pure joy. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Road Trip - [Date]</div>
+                <p>Singing along to songs, windows down. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Dancing in the Rain - [Date]</div>
+                <p>Spontaneous and fun, just like us. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Movie Night - [Date]</div>
+                <p>Cozy under blankets, your favorite film. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Holding Hands - [Date]</div>
+                <p>Simple moments that mean everything. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Favorite Spot - [Date]</div>
+                <p>Our secret place, full of peace. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Smiling Together - [Date]</div>
+                <p>Capturing our happiness. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Anniversary - [Date]</div>
+                <p>Celebrating us with a picnic. <a href="#slideshow">See the photo</a></p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">Late-Night Talks - [Date]</div>
+                <p>Sharing dreams under the stars. <a href="#slideshow">See the photo</a></p>
+            </div>
+        </section>
+        
+        <section class="slideshow" id="slideshow">
+            <h2>Memory Slideshow</h2>
+            <div class="slide-container">
+                <img id="slide-image" src="memory1.jpg" alt="Memory">
+                <p id="slide-caption">Our first date - That magical evening at the park.</p>
+                <button onclick="prevSlide()">Previous</button>
+                <button onclick="nextSlide()">Next</button>
+            </div>
+        </section>
+        
+        <section class="promises">
+            <h2>My Promises to You</h2>
+            <ul>
+                <li>I'll listen more and communicate openly, no matter what.</li>
+                <li>We'll plan more adventures together, like our road trips.</li>
+                <li>I'll never let anger win—patience and love first.</li>
+                <li>Surprises and small gestures to show I care every day.</li>
+                <li>Building a future where we grow stronger as a team.</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>Khushi, this is just the start. Let's talk—reply to this or watch my video message.</p>
+            <a href="mailto:your-email@example.com?subject=Let's Talk">Send Me an Email</a> | <a href="https://youtube.com/your-video-link" target="_blank">Watch My Video Apology</a>
+            <p>Click to play/pause the song if needed.</p>
+            <button onclick="toggleMusic()">Toggle Music</button>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
