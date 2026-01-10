@@ -1,6 +1,5 @@
 // Global variable for countdown timer
-let startDate = new Date('2025-01-10'); // Fight start date (YYYY-MM-DD)
-
+let startDate = new Date('2026-01-06'); // Fight start date (YYYY-MM-DD) - 4 days ago
 // Auto-play the background music on page load
 window.onload = function() {
     const music = document.getElementById('background-music');
