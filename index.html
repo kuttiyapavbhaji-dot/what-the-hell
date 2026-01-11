@@ -8,83 +8,128 @@
 </head>
 <body>
     <audio id="background-music" loop preload="auto">
-        <source src="Khushi come back.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+<source src="Khushi come back.mp3.mp3" type="audio/mpeg">    </audio>
+<div class="container">
+    <header>
+        <h1>Khushi, I'm So Sorry</h1>
+        <p class="subtitle">Our fight has been weighing on me. Let's heal with our memories and promises.</p>
+        <div id="countdown">Time since our fight: <span id="timer"></span></div>
+        <button id="play-music-btn" onclick="playMusic()">Play Our Song</button>
+    </header>
     
-    <div class="container">
-        <header>
-            <h1>Khushi, I'm So Sorry</h1>
-            <p class="subtitle">Our fight has been weighing on me. Let's heal with our memories and promises.</p>
-            <div id="countdown">Time since our fight: <span id="timer"></span></div>
-            <button id="play-music-btn" onclick="playMusic()">Play Our Song</button>
-        </header>
-        
-        <section class="apology-note">
-            <h2>My Heartfelt Apology</h2>
-            <div class="note-part">
-                <p>Khushi, these 4 days without you have felt like an eternity. I replay our fight in my mind and realize how much I hurt you. I'm truly sorry for [not cutting off people you didn't like earlier than usual. During all this time, I've been working on so much for you, and I realized I wanted to create the perfect apology—which is why I made this website]. You deserve better, and I want to be that for you.</p>
-            </div>
-            <div class="note-part">
-                <p>Remember how we always said we'd face everything together? I miss that. I love your kindness, your laugh, and the way you make every moment special. Please give me a chance to make this right.</p>
-            </div>
-            <div class="note-part">
-                <p>These 4 days have been transformative for me. I've done everything I could to work on myself—reflecting on my mistakes, understanding your perspective, and committing to real change. I just want to assure you of peace, and I'm confident that I'll be able to provide that for you now and always.</p>
-            </div>
-            <div class="note-part">
-                <p>With all my heart,<br>Your booboo</p>
-                <button onclick="revealMessage()">Click for a Secret Message</button>
-                <p id="hidden-message" style="display: none;">ps remember this is our song :p</p>
-            </div>
-        </section>
-        
-        <section class="gallery">
-            <h2>Our Memories</h2>
-            <div class="gallery-grid">
-                <img src="memory1.jpg" alt="Memory 1">
-                <img src="memory2.jpg" alt="Memory 2">
-                <img src="memory3.jpg" alt="Memory 3">
-                <img src="memory4.jpg" alt="Memory 4">
-                <img src="memory5.jpg" alt="Memory 5">
-                <img src="memory6.jpg" alt="Memory 6">
-                <img src="memory7.jpg" alt="Memory 7">
-                <img src="memory8.jpg" alt="Memory 8">
-                <img src="memory9.jpg" alt="Memory 9">
-                <img src="memory10.jpg" alt="Memory 10">
-                <img src="memory11.jpg" alt="Memory 11">
-                <img src="memory12.jpg" alt="Memory 12">
-            </div>
-        </section>
-        
-        <section class="slideshow" id="slideshow">
-            <h2>Memory Slideshow</h2>
-            <div class="slide-container">
-                <img id="slide-image" src="memory1.jpg" alt="Memory">
-                <p id="slide-caption">Our first date - That magical evening at the park.</p>
-                <button onclick="prevSlide()">Previous</button>
-                <button onclick="nextSlide()">Next</button>
-            </div>
-        </section>
-        
-        <section class="promises">
-            <h2>My Promises to You</h2>
-            <ul>
-                <li>I'll listen more and communicate openly, no matter what.</li>
-                <li>We'll plan more adventures together, like our movie dates.</li>
-                <li>I'll never let anger win—patience and love first.</li>
-                <li>Surprises and small gestures to show I care every day.</li>
-                <li>Building a future where we grow stronger as a team.</li>
-            </ul>
-        </section>
-        
-        <footer>
-            <p>Khushi, this is just the start. Let's talk—reply to this or watch my video message.</p>
-            <a href="mailto:your-email@example.com?subject=Let's Talk">Send Me an Email</a> | <a href="https://youtube.com/your-video-link" target="_blank">Watch My Video Apology</a>
-            <p>Click to play/pause the song if needed.</p>
-            <button onclick="toggleMusic()">Toggle Music</button>
-        </footer>
-    </div>
+    <section class="apology-note">
+        <h2>My Heartfelt Apology</h2>
+        <div class="note-part">
+            <p>Khushi, these 4 days without you have felt like an eternity. I replay our fight in my mind and realize how much I hurt you. I'm truly sorry for [not cutting off people you didn't like earlier than usual. During all this time, I've been working on so much for you, and I realized I wanted to create the perfect apology—which is why I made this website]. You deserve better, and I want to be that for you.</p>
+        </div>
+        <div class="note-part">
+            <p>Remember how we always said we'd face everything together? I miss that. I love your kindness, your laugh, and the way you make every moment special. Please give me a chance to make this right.</p>
+        </div>
+         <div class="note-part">
+              <p>These 4 days have been transformative for me. I've done everything I could to work on myself—reflecting on my mistakes, understanding your perspective, and committing to real change. I just want to assure you of peace, and I'm confident that I'll be able to provide that for you now and always.</p>
+              </div>
+        <div class="note-part">
+            <p>With all my heart,<br>Your booboo</p>
+            <button onclick="revealMessage()">Click for a Secret Message</button>
+            <p id="hidden-message" style="display: none;">ps remember this is our song :p</p>
+        </div>
+    </section>
     
-    <script src="script.js"></script>
+    <section class="timeline">
+        <h2>Our Story: Key Memories</h2>
+        <div class="timeline-item">
+            <div class="date">First Date - [September 9, 2024]</div>
+            <p>That magical evening when we played roblox <a href="#slideshow">See the photo</a></p>
+            				<img src="memory1.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">Second meetup]</div>
+            <p>. <a href="#slideshow">See the photo</a></p>
+            				<img src="memory2.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">Finally kidner joy mila</div>
+            <p> <a href="#slideshow">See the photo</a></p>
+            				<img src="memory3.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">First meet</div>
+            <p>Your face when you saw me was pure joy. <a href="#slideshow">See the photo</a></p>
+            				<img src="memory4.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">HUggie</div>
+            <p> <a href="#slideshow">See the photo</a></p>
+            				<img src="memory5.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">car me waar</div>
+            <p>Spontaneous and fun, just like us. <a href="#slideshow">See the photo</a></p>
+            				<img src="memory6.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">Irl date</div>
+            <p>Tasty fries the <a href="#slideshow">See the photo</a></p>
+            				<img src="memory7.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">]Always on phone</div>
+            <p>Simple moments that mean everything. <a href="#slideshow">See the photo</a></p>
+            				<img src="memory8.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">Favorite Spot</div>
+            <p. <a href="#slideshow">See the photo</a></p>
+            				<img src="memory9.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">Online cawl</div>
+            <p>Capturing our happiness. <a href="#slideshow">See the photo</a></p>
+            				<img src="memory10.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">TV girl from that roblox reel</div>
+            <p> <a href="#slideshow">See the photo</a></p>
+            				<img src="memory11.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+        <div class="timeline-item">
+            <div class="date">PW HEHE</div>
+            <p><a href="#slideshow">See the photo</a></p>
+            				<img src="memory12.jpg" alt="Memory" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+        </div>
+    </section>
+    
+    <section class="slideshow" id="slideshow">
+        <h2>Memory Slideshow</h2>
+        <div class="slide-container">
+            <img id="slide-image" src="memory1.jpg" alt="Memory">
+            <p id="slide-caption"></p>
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    41
+        
+    
+    <section class="promises">
+        <h2>My Promises to You</h2>
+        <ul>
+            <li>I'll listen more and communicate openly, no matter what.</li>
+            <li>We'll plan more adventures together, like our movie dates.</li>
+            <li>I'll never let anger win—patience and love first.</li>
+            <li>Surprises and small gestures to show I care every day.</li>
+            <li>Building a future where we grow stronger as a team.</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>Khushi, this is just the start. Let's talk—reply to this or watch my video message.</p>
+        <a href="mailto:kuttiyapavbhaji@gmail.com.com?subject=Let's Talk">Send Me an Email</a> | <a href="https://www.youtube.com/shorts/kmGp4SgAVa8" target="_blank">For you</a>
+        <p>Click to play/pause the song if needed.</p>
+        <button onclick="toggleMusic()">Toggle Music</button>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
