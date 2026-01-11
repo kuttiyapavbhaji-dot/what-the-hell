@@ -55,18 +55,18 @@ function revealMessage() {
 // Slideshow functions
 let currentSlide = 0;
 const slides = [
-    { img: 'memory1.jpg', caption: 'Our first date - That magical evening at the park.' },
-    { img: 'memory2.jpg', caption: 'Sunset walk - Watching the sky turn orange, holding hands.' },
-    { img: 'memory3.jpg', caption: 'Cooking adventure - Making a mess, but laughing through it.' },
-    { img: 'memory4.jpg', caption: 'Birthday surprise - Your face when you saw the cake.' },
-    { img: 'memory5.jpg', caption: 'Road trip - Singing along, windows down.' },
-    { img: 'memory6.jpg', caption: 'Dancing in the rain - Spontaneous and fun.' },
-    { img: 'memory7.jpg', caption: 'Movie night - Cozy under blankets.' },
-    { img: 'memory8.jpg', caption: 'Holding hands - Simple moments that mean everything.' },
-    { img: 'memory9.jpg', caption: 'Favorite spot - Our secret place.' },
-    { img: 'memory10.jpg', caption: 'Smiling together - Capturing our happiness.' },
-    { img: 'memory11.jpg', caption: 'Anniversary - Celebrating us with a picnic.' },
-    { img: 'memory12.jpg', caption: 'Late-night talks - Sharing dreams under the stars.' }
+    { img: 'memory1.jpg', caption:  },
+    { img: 'memory2.jpg', caption:  },
+    { img: 'memory3.jpg', caption: },
+    { img: 'memory4.jpg', caption:  },
+    { img: 'memory5.jpg', caption: },
+    { img: 'memory6.jpg', caption: },
+    { img: 'memory7.jpg', caption:  },
+    { img: 'memory8.jpg', caption:  },
+    { img: 'memory9.jpg', caption:  },
+    { img: 'memory10.jpg', caption: },
+    { img: 'memory11.jpg', caption:  },
+    { img: 'memory12.jpg', caption:  }
 ];
 
 function showSlide(index) {
