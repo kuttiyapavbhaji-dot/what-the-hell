@@ -67,6 +67,7 @@ const slides = [
     { img: 'memory10.jpg', caption: '8' },
     { img: 'memory11.jpg', caption: '9.' },
     { img: 'memory12.jpg', caption: '10.' }
+    ];
 
 function showSlide(index) {
     document.getElementById('slide-image').src = slides[index].img;
